@@ -19,4 +19,15 @@ block:
     except:
         doAssert false
 
-
+proc createMessage*(username, message: string): string =
+    result = $(%{
+        "username": %username,
+        "message": %message
+    
+    }) & "\c\1"
+when isMainModule:
+  block:
+    let data = """{"username": "dom", "message": "hello"}"""
+    let parsed = parseMessage(data)
+    doAssert parsed.message == "hello"
+    doAssert parsed.username == "dom"
