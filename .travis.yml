@@ -6,3 +6,4 @@ script:
   - sudo update-locale LC_ALL="en_US.UTF-8"
   - sudo snap install tree
   - .github/tree.sh
+  - cat README.md
