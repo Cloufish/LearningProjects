@@ -1,3 +1,4 @@
 language: bash
 script:
+  - pwd
   - ./.github/tree.sh
