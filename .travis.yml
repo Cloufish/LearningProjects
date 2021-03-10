@@ -1,4 +1,4 @@
 language: bash
 script:
-  - pwd
+  - apt install tree
   - ./.github/tree.sh

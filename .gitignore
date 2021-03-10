@@ -86,3 +86,9 @@ nb-configuration.xml
 ## Python
 #############################
 venv/
+
+#############################
+## Javascript/WebFiles
+#############################
+Programming_Languages/javascript/*
+!Programming_Languages/javascript/*.js
