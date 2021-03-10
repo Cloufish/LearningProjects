@@ -1,6 +1,6 @@
 language: bash
 script:
   - sudo apt update
-  - sudo apt install snapd
+  - sudo apt install snapd locales
   - sudo snap install tree
   - ./.github/tree.sh
