@@ -2,12 +2,12 @@
 ## Java
 ##############################
 .mtj.tmp/
-*.class
-*.jar
-*.war
-*.ear
-*.nar
-hs_err_pid*
+**/*.class
+**/*.jar
+**/*.war
+**/*.ear
+**/*.nar
+**/hs_err_pid*
 
 ##############################
 ## Maven
@@ -40,9 +40,9 @@ gradle-app.setting
 out/
 .idea/
 .idea_modules/
-*.iml
-*.ipr
-*.iws
+**/*.iml
+**/*.ipr
+**/*.iws
 
 ##############################
 ## Eclipse
@@ -53,10 +53,10 @@ tmp/
 .metadata
 .classpath
 .project
-*.tmp
-*.bak
-*.swp
-*~.nib
+**/*.tmp
+**/*.bak
+**/*.swp
+**/*~.nib
 local.properties
 .loadpath
 .factorypath
@@ -90,6 +90,6 @@ venv/
 #############################
 ## Javascript/WebFiles
 #############################
-*.html
-*.wav
-*.css
+**/*.html
+**/*.wav
+**/*.css
