@@ -1,5 +1,6 @@
 language: bash
 script:
-  - hostnamectl
-  - sudo apt install tree
+  - sudo apt update
+  - sudo apt install snapd
+  - sudo snap install tree
   - ./.github/tree.sh
