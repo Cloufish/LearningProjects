@@ -90,5 +90,6 @@ venv/
 #############################
 ## Javascript/WebFiles
 #############################
-Programming_Languages/javascript/*
-!Programming_Languages/javascript/*.js
+*.html
+*.wav
+*.css

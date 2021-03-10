@@ -1,4 +1,4 @@
 language: bash
 script:
-  - apt install tree
+  - sudo apt install tree
   - ./.github/tree.sh
