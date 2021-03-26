@@ -28,5 +28,4 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: | 
-         chmod +x .github/tree.sh 
          .github/tree.sh
