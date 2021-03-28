@@ -67,8 +67,12 @@ However, I do have plans to extend the projects functionality, because most of t
 │   │   │   │   ├── app.component.ts
 │   │   │   │   ├── app.module.ts
 │   │   │   │   └── posts
-│   │   │   │       └── post-create
-│   │   │   │           └── post-create.component.ts
+│   │   │   │       ├── header
+│   │   │   │       │   └── header.component.ts
+│   │   │   │       ├── post-create
+│   │   │   │       │   └── post-create.component.ts
+│   │   │   │       └── posts-list
+│   │   │   │           └── posts-list.component.ts
 │   │   │   ├── assets
 │   │   │   ├── environments
 │   │   │   │   ├── environment.prod.ts
@@ -160,5 +164,5 @@ However, I do have plans to extend the projects functionality, because most of t
 │               └── listing9_parsing_with_parseutils.nim
 └── README.md
 
-48 directories, 105 files
+50 directories, 107 files
 ```
