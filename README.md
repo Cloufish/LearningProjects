@@ -3,7 +3,7 @@ This repo is for project just for Learning purpose. I do not explicitly own any 
 
 ## The further developement of this Projects
 
-However, I do have plans to extend the projects functionality, because most of them covers only basic concepts in Computer Science, Cryptography, and other security non-related projects just for getting familiar with Programming Language.
+However, I do have plans to extend the projects functionality, because most of them cover only basic concepts in Computer Science, Cryptography, and other security non-related projects just for getting familiar with Programming Language.
 ## TREE OVERVIEW 
 ```.
 ├── Android_Apps
