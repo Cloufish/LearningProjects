@@ -1,0 +1,2 @@
+rootProject.name = "MOBISEC2020IntroDev"
+include ':app'
