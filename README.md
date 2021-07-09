@@ -6,6 +6,172 @@ This repo is for project just for Learning purpose. I do not explicitly own any 
 However, I do have plans to extend the projects functionality, because most of them covers only basic concepts in Computer Science, Cryptography, and other security non-related projects just for getting familiar with Programming Language.
 ## TREE OVERVIEW 
 ```.
+├── Android_Apps
+│   ├── MOBISEC2020IntroDev
+│   │   ├── app
+│   │   │   ├── build.gradle
+│   │   │   ├── proguard-rules.pro
+│   │   │   └── src
+│   │   │       ├── androidTest
+│   │   │       │   └── java
+│   │   │       │       └── com
+│   │   │       │           └── example
+│   │   │       │               └── mobisec2020introdev
+│   │   │       │                   └── ExampleInstrumentedTest.java
+│   │   │       ├── main
+│   │   │       │   ├── AndroidManifest.xml
+│   │   │       │   ├── java
+│   │   │       │   │   └── com
+│   │   │       │   │       └── example
+│   │   │       │   │           └── mobisec2020introdev
+│   │   │       │   │               ├── BumoActivity.java
+│   │   │       │   │               ├── First2Fragment.java
+│   │   │       │   │               ├── FirstFragment.java
+│   │   │       │   │               ├── MainActivity.java
+│   │   │       │   │               ├── Second2Fragment.java
+│   │   │       │   │               └── SecondFragment.java
+│   │   │       │   └── res
+│   │   │       │       ├── drawable
+│   │   │       │       │   └── ic_launcher_background.xml
+│   │   │       │       ├── drawable-v24
+│   │   │       │       │   └── ic_launcher_foreground.xml
+│   │   │       │       ├── layout
+│   │   │       │       │   ├── activity_bumo.xml
+│   │   │       │       │   ├── activity_main.xml
+│   │   │       │       │   ├── content_bumo.xml
+│   │   │       │       │   ├── content_main.xml
+│   │   │       │       │   ├── fragment_first.xml
+│   │   │       │       │   ├── fragment_first2.xml
+│   │   │       │       │   ├── fragment_second.xml
+│   │   │       │       │   └── fragment_second2.xml
+│   │   │       │       ├── menu
+│   │   │       │       │   └── menu_main.xml
+│   │   │       │       ├── mipmap-anydpi-v26
+│   │   │       │       │   ├── ic_launcher.xml
+│   │   │       │       │   └── ic_launcher_round.xml
+│   │   │       │       ├── mipmap-hdpi
+│   │   │       │       │   ├── ic_launcher.png
+│   │   │       │       │   └── ic_launcher_round.png
+│   │   │       │       ├── mipmap-mdpi
+│   │   │       │       │   ├── ic_launcher.png
+│   │   │       │       │   └── ic_launcher_round.png
+│   │   │       │       ├── mipmap-xhdpi
+│   │   │       │       │   ├── ic_launcher.png
+│   │   │       │       │   └── ic_launcher_round.png
+│   │   │       │       ├── mipmap-xxhdpi
+│   │   │       │       │   ├── ic_launcher.png
+│   │   │       │       │   └── ic_launcher_round.png
+│   │   │       │       ├── mipmap-xxxhdpi
+│   │   │       │       │   ├── ic_launcher.png
+│   │   │       │       │   └── ic_launcher_round.png
+│   │   │       │       ├── navigation
+│   │   │       │       │   ├── nav_graph.xml
+│   │   │       │       │   └── nav_graph2.xml
+│   │   │       │       ├── values
+│   │   │       │       │   ├── colors.xml
+│   │   │       │       │   ├── dimens.xml
+│   │   │       │       │   ├── strings.xml
+│   │   │       │       │   └── themes.xml
+│   │   │       │       └── values-night
+│   │   │       │           └── themes.xml
+│   │   │       └── test
+│   │   │           └── java
+│   │   │               └── com
+│   │   │                   └── example
+│   │   │                       └── mobisec2020introdev
+│   │   │                           └── ExampleUnitTest.java
+│   │   ├── build.gradle
+│   │   ├── gradle
+│   │   │   └── wrapper
+│   │   │       ├── gradle-wrapper.jar
+│   │   │       └── gradle-wrapper.properties
+│   │   ├── gradle.properties
+│   │   ├── gradlew
+│   │   ├── gradlew.bat
+│   │   └── settings.gradle
+│   └── ToDoList
+│       ├── app
+│       │   ├── build.gradle
+│       │   ├── proguard-rules.pro
+│       │   └── src
+│       │       ├── androidTest
+│       │       │   └── java
+│       │       │       └── com
+│       │       │           └── example
+│       │       │               └── todoactivity
+│       │       │                   └── ExampleInstrumentedTest.java
+│       │       ├── main
+│       │       │   ├── AndroidManifest.xml
+│       │       │   ├── java
+│       │       │   │   └── com
+│       │       │   │       └── example
+│       │       │   │           └── todoactivity
+│       │       │   │               ├── Adapter
+│       │       │   │               │   └── ToDoAdapter.java
+│       │       │   │               ├── AddNewTask.java
+│       │       │   │               ├── DialogCloseListener.java
+│       │       │   │               ├── MainActivity.java
+│       │       │   │               ├── Model
+│       │       │   │               │   └── ToDoModel.java
+│       │       │   │               ├── RecyclerItemTouchHelper.java
+│       │       │   │               ├── SplashActivity.java
+│       │       │   │               └── Utils
+│       │       │   │                   └── DatabaseHandler.java
+│       │       │   └── res
+│       │       │       ├── drawable
+│       │       │       │   ├── ic_baseline_add.xml
+│       │       │       │   ├── ic_baseline_delete_24.xml
+│       │       │       │   ├── ic_baseline_edit.xml
+│       │       │       │   └── ic_launcher_background.xml
+│       │       │       ├── drawable-v24
+│       │       │       │   └── ic_launcher_foreground.xml
+│       │       │       ├── layout
+│       │       │       │   ├── activity_main.xml
+│       │       │       │   ├── activity_splash.xml
+│       │       │       │   ├── new_task.xml
+│       │       │       │   └── task_layout.xml
+│       │       │       ├── layout-v21
+│       │       │       │   ├── activity_main.xml
+│       │       │       │   └── task_layout.xml
+│       │       │       ├── mipmap-anydpi-v26
+│       │       │       │   ├── ic_launcher.xml
+│       │       │       │   └── ic_launcher_round.xml
+│       │       │       ├── mipmap-hdpi
+│       │       │       │   ├── ic_launcher.png
+│       │       │       │   └── ic_launcher_round.png
+│       │       │       ├── mipmap-mdpi
+│       │       │       │   ├── ic_launcher.png
+│       │       │       │   └── ic_launcher_round.png
+│       │       │       ├── mipmap-xhdpi
+│       │       │       │   ├── ic_launcher.png
+│       │       │       │   └── ic_launcher_round.png
+│       │       │       ├── mipmap-xxhdpi
+│       │       │       │   ├── ic_launcher.png
+│       │       │       │   └── ic_launcher_round.png
+│       │       │       ├── mipmap-xxxhdpi
+│       │       │       │   ├── ic_launcher.png
+│       │       │       │   └── ic_launcher_round.png
+│       │       │       ├── values
+│       │       │       │   ├── colors.xml
+│       │       │       │   ├── strings.xml
+│       │       │       │   └── themes.xml
+│       │       │       └── values-night
+│       │       │           └── themes.xml
+│       │       └── test
+│       │           └── java
+│       │               └── com
+│       │                   └── example
+│       │                       └── todoactivity
+│       │                           └── ExampleUnitTest.java
+│       ├── build.gradle
+│       ├── gradle
+│       │   └── wrapper
+│       │       ├── gradle-wrapper.jar
+│       │       └── gradle-wrapper.properties
+│       ├── gradle.properties
+│       ├── gradlew
+│       ├── gradlew.bat
+│       └── settings.gradle
 ├── DevSecOps
 │   ├── Docker_Stuff
 │   │   └── Apache_HTTPd_Server
@@ -15,6 +181,12 @@ However, I do have plans to extend the projects functionality, because most of t
 │       └── Intro
 │           └── deployment.yml
 ├── Programming_Languages
+│   ├── Android_Apps
+│   │   ├── build.gradle
+│   │   ├── gradle.properties
+│   │   ├── gradlew
+│   │   ├── gradlew.bat
+│   │   └── settings.gradle
 │   ├── Ansible
 │   │   ├── Ansible_LAB_setup.sh
 │   │   └── Vagrantfile
@@ -48,43 +220,6 @@ However, I do have plans to extend the projects functionality, because most of t
 │   │           ├── Maze.java
 │   │           ├── MazeSolver.java
 │   │           └── Position.java
-│   ├── MEAN-Stack
-│   │   ├── README.md
-│   │   ├── angular.json
-│   │   ├── e2e
-│   │   │   ├── protractor.conf.js
-│   │   │   ├── src
-│   │   │   │   ├── app.e2e-spec.ts
-│   │   │   │   └── app.po.ts
-│   │   │   └── tsconfig.json
-│   │   ├── karma.conf.js
-│   │   ├── package-lock.json
-│   │   ├── package.json
-│   │   ├── src
-│   │   │   ├── app
-│   │   │   │   ├── app-routing.module.ts
-│   │   │   │   ├── app.component.spec.ts
-│   │   │   │   ├── app.component.ts
-│   │   │   │   ├── app.module.ts
-│   │   │   │   └── posts
-│   │   │   │       ├── header
-│   │   │   │       │   └── header.component.ts
-│   │   │   │       ├── post-create
-│   │   │   │       │   └── post-create.component.ts
-│   │   │   │       └── posts-list
-│   │   │   │           └── posts-list.component.ts
-│   │   │   ├── assets
-│   │   │   ├── environments
-│   │   │   │   ├── environment.prod.ts
-│   │   │   │   └── environment.ts
-│   │   │   ├── favicon.ico
-│   │   │   ├── main.ts
-│   │   │   ├── polyfills.ts
-│   │   │   └── test.ts
-│   │   ├── tsconfig.app.json
-│   │   ├── tsconfig.json
-│   │   ├── tsconfig.spec.json
-│   │   └── tslint.json
 │   ├── Python
 │   │   └── Ciphers
 │   │       ├── Ceasar_Cipher
@@ -162,7 +297,45 @@ However, I do have plans to extend the projects functionality, because most of t
 │               ├── listing7_parsing_with_regex.nim
 │               ├── listing8_parsing_with_split.nim
 │               └── listing9_parsing_with_parseutils.nim
-└── README.md
+├── README.md
+└── Web_Apps
+    └── MEAN-Stack
+        ├── README.md
+        ├── angular.json
+        ├── e2e
+        │   ├── protractor.conf.js
+        │   ├── src
+        │   │   ├── app.e2e-spec.ts
+        │   │   └── app.po.ts
+        │   └── tsconfig.json
+        ├── karma.conf.js
+        ├── package-lock.json
+        ├── package.json
+        ├── src
+        │   ├── app
+        │   │   ├── app-routing.module.ts
+        │   │   ├── app.component.spec.ts
+        │   │   ├── app.component.ts
+        │   │   ├── app.module.ts
+        │   │   └── posts
+        │   │       ├── header
+        │   │       │   └── header.component.ts
+        │   │       ├── post-create
+        │   │       │   └── post-create.component.ts
+        │   │       └── posts-list
+        │   │           └── posts-list.component.ts
+        │   ├── assets
+        │   ├── environments
+        │   │   ├── environment.prod.ts
+        │   │   └── environment.ts
+        │   ├── favicon.ico
+        │   ├── main.ts
+        │   ├── polyfills.ts
+        │   └── test.ts
+        ├── tsconfig.app.json
+        ├── tsconfig.json
+        ├── tsconfig.spec.json
+        └── tslint.json
 
-50 directories, 107 files
+123 directories, 207 files
 ```
