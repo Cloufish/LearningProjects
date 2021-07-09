@@ -1,0 +1,48 @@
+---
+- hosts: all
+  become: yes
+
+  vars:
+    node_apps_location: /usr/local/opt/node
+
+    tasks:
+      - name: Install EPEL repo.
+        yum: name=epel-release state=present
+
+      - name: Import Remi GPD key.
+        rpm_key:
+          key: "https://rpms.remirepo.net/RPM-GPG-KEY-remi"
+
+      - name: Install Remi Repo
+        yum:
+          name: "https://rpms.remirepo.net/enterprise/remi-release-7.rpm"
+          state: present
+
+      - name: Ensure firewalld is stopped
+        service: name=firewalld state=stopped
+
+      - name: Install Node.js and npm.
+        yum: name=npm state=present enablerepo=epel
+
+      - name: Install Forever (to run Node.js app)
+        npm: name=forever global=yes state=present
+
+      - name: Ensure Node.js App Folder Exists.
+        file: "path= {{ node_apps_location }} state=directory"
+
+      - name: Copy example Node.js app to Server
+        copy: "src=app dest={{ node_apps_location }}"
+
+      - name: Install App Dependencies defined in package.json
+        npm: path={{ node_apps_location }}//app
+
+      - name: Check list of running Node.js apps
+        command: forever list
+        register: forever_list # Creates new variable
+        changed_when: false # Tells Ansible when this play results in a change;
+          # In this case we know that this command won't change the server
+
+      - name: Start example Node.js App
+        command: "forever start {{ node_apps_location }}/app/app.js"
+        when: "forever_list_stdout.find(node_apps_location) + \
+               'app/app.js') == -1"
