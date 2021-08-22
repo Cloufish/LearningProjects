@@ -216,6 +216,70 @@ However, I do have plans to extend the projects functionality, because most of t
 │       │   ├── gradlew
 │       │   ├── gradlew.bat
 │       │   └── settings.gradle
+│       ├── Learning_SMALI
+│       │   ├── app
+│       │   │   ├── build.gradle
+│       │   │   ├── proguard-rules.pro
+│       │   │   └── src
+│       │   │       ├── androidTest
+│       │   │       │   └── java
+│       │   │       │       └── com
+│       │   │       │           └── example
+│       │   │       │               └── learning_smali
+│       │   │       │                   └── ExampleInstrumentedTest.kt
+│       │   │       ├── main
+│       │   │       │   ├── AndroidManifest.xml
+│       │   │       │   ├── java
+│       │   │       │   │   └── com
+│       │   │       │   │       └── example
+│       │   │       │   │           └── learning_smali
+│       │   │       │   │               └── MainActivity.kt
+│       │   │       │   └── res
+│       │   │       │       ├── drawable
+│       │   │       │       │   └── ic_launcher_background.xml
+│       │   │       │       ├── drawable-v24
+│       │   │       │       │   └── ic_launcher_foreground.xml
+│       │   │       │       ├── layout
+│       │   │       │       │   └── activity_main.xml
+│       │   │       │       ├── mipmap-anydpi-v26
+│       │   │       │       │   ├── ic_launcher.xml
+│       │   │       │       │   └── ic_launcher_round.xml
+│       │   │       │       ├── mipmap-hdpi
+│       │   │       │       │   ├── ic_launcher.webp
+│       │   │       │       │   └── ic_launcher_round.webp
+│       │   │       │       ├── mipmap-mdpi
+│       │   │       │       │   ├── ic_launcher.webp
+│       │   │       │       │   └── ic_launcher_round.webp
+│       │   │       │       ├── mipmap-xhdpi
+│       │   │       │       │   ├── ic_launcher.webp
+│       │   │       │       │   └── ic_launcher_round.webp
+│       │   │       │       ├── mipmap-xxhdpi
+│       │   │       │       │   ├── ic_launcher.webp
+│       │   │       │       │   └── ic_launcher_round.webp
+│       │   │       │       ├── mipmap-xxxhdpi
+│       │   │       │       │   ├── ic_launcher.webp
+│       │   │       │       │   └── ic_launcher_round.webp
+│       │   │       │       ├── values
+│       │   │       │       │   ├── colors.xml
+│       │   │       │       │   ├── strings.xml
+│       │   │       │       │   └── themes.xml
+│       │   │       │       └── values-night
+│       │   │       │           └── themes.xml
+│       │   │       └── test
+│       │   │           └── java
+│       │   │               └── com
+│       │   │                   └── example
+│       │   │                       └── learning_smali
+│       │   │                           └── ExampleUnitTest.kt
+│       │   ├── build.gradle
+│       │   ├── gradle
+│       │   │   └── wrapper
+│       │   │       ├── gradle-wrapper.jar
+│       │   │       └── gradle-wrapper.properties
+│       │   ├── gradle.properties
+│       │   ├── gradlew
+│       │   ├── gradlew.bat
+│       │   └── settings.gradle
 │       └── ToDoList
 │           ├── app
 │           │   ├── build.gradle
@@ -300,29 +364,31 @@ However, I do have plans to extend the projects functionality, because most of t
 │           ├── gradlew.bat
 │           └── settings.gradle
 ├── DevSecOps
-│   ├── Docker_Stuff
-│   │   └── Apache_HTTPd_Server
-│   │       ├── Dockerfile
-│   │       └── httpd.conf
-│   ├── Infra_Stuff
-│   │   └── Ansible_Lab
-│   │       ├── 1. Basic Playbook
-│   │       │   ├── Vagrantfile
-│   │       │   └── playbook.yml
-│   │       ├── 2. Simple Multi-Machine Management
-│   │       │   ├── Vagrantfile
-│   │       │   └── hosts
-│   │       └── 3. Learning Writing Playbooks
-│   │           ├── NodeJS-App
-│   │           │   ├── Vagrantfile
-│   │           │   ├── app.js
-│   │           │   ├── nodejs_app_playbook.yml
-│   │           │   └── package.json
-│   │           ├── example_playbook.yml
-│   │           └── idempotence_playbook.yml
-│   └── Kubernetes_Stuff
-│       └── Intro
-│           └── deployment.yml
+│   └── Infra_Stuff
+│       ├── Ansible_Lab
+│       │   ├── 1. Basic Playbook
+│       │   │   ├── Vagrantfile
+│       │   │   └── playbook.yml
+│       │   ├── 2. Simple Multi-Machine Management
+│       │   │   ├── Vagrantfile
+│       │   │   └── hosts
+│       │   └── 3. Learning Writing Playbooks
+│       │       ├── NodeJS-App
+│       │       │   ├── Vagrantfile
+│       │       │   ├── app.js
+│       │       │   ├── nodejs_app_playbook.yml
+│       │       │   └── package.json
+│       │       ├── Ubuntu LAMP
+│       │       │   └── playbook.yml
+│       │       ├── example_playbook.yml
+│       │       └── idempotence_playbook.yml
+│       ├── Docker_Stuff
+│       │   └── Apache_HTTPd_Server
+│       │       ├── Dockerfile
+│       │       └── httpd.conf
+│       └── Kubernetes_Stuff
+│           └── Intro
+│               └── deployment.yml
 ├── Programming_Languages_Challs
 │   ├── C
 │   │   ├── Bootloader
@@ -406,6 +472,64 @@ However, I do have plans to extend the projects functionality, because most of t
 │               └── listing9_parsing_with_parseutils.nim
 ├── README.md
 └── Web_Apps
+    ├── Django
+    │   └── Django_Course_Site
+    │       ├── Django_Course_Site
+    │       │   ├── __init__.py
+    │       │   ├── __pycache__
+    │       │   │   ├── __init__.cpython-39.pyc
+    │       │   │   ├── settings.cpython-39.pyc
+    │       │   │   ├── urls.cpython-39.pyc
+    │       │   │   └── wsgi.cpython-39.pyc
+    │       │   ├── asgi.py
+    │       │   ├── settings.py
+    │       │   ├── urls.py
+    │       │   └── wsgi.py
+    │       ├── db.sqlite3
+    │       ├── manage.py
+    │       └── meetups
+    │           ├── __init__.py
+    │           ├── __pycache__
+    │           │   ├── __init__.cpython-39.pyc
+    │           │   ├── admin.cpython-39.pyc
+    │           │   ├── apps.cpython-39.pyc
+    │           │   ├── models.cpython-39.pyc
+    │           │   ├── urls.cpython-39.pyc
+    │           │   └── views.cpython-39.pyc
+    │           ├── admin.py
+    │           ├── apps.py
+    │           ├── migrations
+    │           │   ├── __init__.py
+    │           │   └── __pycache__
+    │           │       └── __init__.cpython-39.pyc
+    │           ├── models.py
+    │           ├── static
+    │           │   └── meetups
+    │           │       └── styles
+    │           │           ├── all-meetups.css
+    │           │           ├── base.css
+    │           │           ├── meetup-detail.css
+    │           │           └── registration-confirmation.css
+    │           ├── templates
+    │           │   └── meetups
+    │           │       ├── index.html
+    │           │       └── meetup-details.html
+    │           ├── tests.py
+    │           ├── urls.py
+    │           └── views.py
+    ├── Flask
+    │   └── TaskMaster
+    │       ├── __pycache__
+    │       │   └── app.cpython-39.pyc
+    │       ├── app.py
+    │       ├── static
+    │       │   └── css
+    │       │       └── main.css
+    │       ├── templates
+    │       │   ├── base.html
+    │       │   ├── index.html
+    │       │   └── update.html
+    │       └── test.db
     └── MEAN-Stack
         ├── README.md
         ├── angular.json
@@ -444,5 +568,5 @@ However, I do have plans to extend the projects functionality, because most of t
         ├── tsconfig.spec.json
         └── tslint.json
 
-184 directories, 253 files
+236 directories, 325 files
 ```
