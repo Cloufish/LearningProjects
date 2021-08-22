@@ -1,0 +1,39 @@
+---
+# ON THE UBUNTU OS
+- hosts: all
+  become: yes
+
+  vars_files:
+    - vars.yml
+
+  pre_tasks:
+    - name: Update apt cache if needed.
+      apt: update_cache=yes cache_valid_time=3600
+
+  handlers: # Handlers notifies you at the end of the playbook 
+            # when a play is successfully executed
+            # WE NEED TO DEFINE notify: restart apache option
+    - name: restart apache
+      service: name=apache2 state=restarted
+      
+  
+  tasks:
+    - name: Get software for apt repository management.
+      apt:
+        name:
+          - python-apt
+          - python-pycurl
+        state: present
+
+    - name: Add ondrej repository for later versions of PHP
+      apt_repository: repo="ppa:ondrej/php" update_cache=yes
+
+    - name: Install Apache, MySQL, PHP, and other dependencies
+  
+      apt:
+
+        name:
+
+          - git
+          
+    
