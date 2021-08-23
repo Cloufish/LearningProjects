@@ -487,36 +487,56 @@ However, I do have plans to extend the projects functionality, because most of t
     │       │   └── wsgi.py
     │       ├── db.sqlite3
     │       ├── manage.py
-    │       └── meetups
-    │           ├── __init__.py
-    │           ├── __pycache__
-    │           │   ├── __init__.cpython-39.pyc
-    │           │   ├── admin.cpython-39.pyc
-    │           │   ├── apps.cpython-39.pyc
-    │           │   ├── models.cpython-39.pyc
-    │           │   ├── urls.cpython-39.pyc
-    │           │   └── views.cpython-39.pyc
-    │           ├── admin.py
-    │           ├── apps.py
-    │           ├── migrations
-    │           │   ├── __init__.py
-    │           │   └── __pycache__
-    │           │       └── __init__.cpython-39.pyc
-    │           ├── models.py
-    │           ├── static
-    │           │   └── meetups
-    │           │       └── styles
-    │           │           ├── all-meetups.css
-    │           │           ├── base.css
-    │           │           ├── meetup-detail.css
-    │           │           └── registration-confirmation.css
-    │           ├── templates
-    │           │   └── meetups
-    │           │       ├── index.html
-    │           │       └── meetup-details.html
-    │           ├── tests.py
-    │           ├── urls.py
-    │           └── views.py
+    │       ├── meetups
+    │       │   ├── __init__.py
+    │       │   ├── __pycache__
+    │       │   │   ├── __init__.cpython-39.pyc
+    │       │   │   ├── admin.cpython-39.pyc
+    │       │   │   ├── apps.cpython-39.pyc
+    │       │   │   ├── forms.cpython-39.pyc
+    │       │   │   ├── models.cpython-39.pyc
+    │       │   │   ├── urls.cpython-39.pyc
+    │       │   │   └── views.cpython-39.pyc
+    │       │   ├── admin.py
+    │       │   ├── apps.py
+    │       │   ├── forms.py
+    │       │   ├── migrations
+    │       │   │   ├── 0001_initial.py
+    │       │   │   ├── 0002_auto_20210823_1015.py
+    │       │   │   ├── 0003_auto_20210823_1053.py
+    │       │   │   ├── __init__.py
+    │       │   │   └── __pycache__
+    │       │   │       ├── 0001_initial.cpython-39.pyc
+    │       │   │       ├── 0002_auto_20210823_1015.cpython-39.pyc
+    │       │   │       ├── 0003_auto_20210823_1053.cpython-39.pyc
+    │       │   │       └── __init__.cpython-39.pyc
+    │       │   ├── models.py
+    │       │   ├── static
+    │       │   │   └── meetups
+    │       │   │       └── styles
+    │       │   │           ├── all-meetups.css
+    │       │   │           ├── base.css
+    │       │   │           ├── meetup-detail.css
+    │       │   │           └── registration-confirmation.css
+    │       │   ├── templates
+    │       │   │   └── meetups
+    │       │   │       ├── base
+    │       │   │       │   └── base.html
+    │       │   │       ├── includes
+    │       │   │       │   └── meetup-item.html
+    │       │   │       ├── index.html
+    │       │   │       ├── meetup-details.html
+    │       │   │       └── registration-success.html
+    │       │   ├── tests.py
+    │       │   ├── urls.py
+    │       │   └── views.py
+    │       └── uploads
+    │           └── images
+    │               ├── 4z_KB1qtCsTjcUqxDTbVIpJlR-AMzqrPeZDIz7VKdko.png
+    │               ├── 4z_KB1qtCsTjcUqxDTbVIpJlR-AMzqrPeZDIz7VKdko_BqkqnNB.png
+    │               ├── 4z_KB1qtCsTjcUqxDTbVIpJlR-AMzqrPeZDIz7VKdko_OGnl3Z6.png
+    │               ├── 4z_KB1qtCsTjcUqxDTbVIpJlR-AMzqrPeZDIz7VKdko_RpWuLW7.png
+    │               └── 4z_KB1qtCsTjcUqxDTbVIpJlR-AMzqrPeZDIz7VKdko_sF089YE.png
     ├── Flask
     │   └── TaskMaster
     │       ├── __pycache__
@@ -568,5 +588,5 @@ However, I do have plans to extend the projects functionality, because most of t
         ├── tsconfig.spec.json
         └── tslint.json
 
-236 directories, 325 files
+240 directories, 341 files
 ```
