@@ -473,8 +473,8 @@ However, I do have plans to extend the projects functionality, because most of t
 ├── README.md
 └── Web_Apps
     ├── Django
-    │   └── Django_Course_Site
-    │       ├── Django_Course_Site
+    │   └── Django_Meetups_App
+    │       ├── Django_Meetups_App
     │       │   ├── __init__.py
     │       │   ├── __pycache__
     │       │   │   ├── __init__.cpython-39.pyc
