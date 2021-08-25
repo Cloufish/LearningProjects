@@ -7,362 +7,430 @@ However, I do have plans to extend the projects functionality, because most of t
 ## TREE OVERVIEW 
 ```.
 ├── Android_Apps
-│   ├── Cyber-Chef-Mobile
-│   │   └── README.md
-│   └── Googles_CodeLabs
-│       ├── AboutMe
-│       │   ├── app
-│       │   │   ├── build.gradle
-│       │   │   ├── proguard-rules.pro
-│       │   │   └── src
-│       │   │       ├── androidTest
-│       │   │       │   └── java
-│       │   │       │       └── com
-│       │   │       │           └── example
-│       │   │       │               └── aboutme
-│       │   │       │                   └── ExampleInstrumentedTest.kt
-│       │   │       ├── main
-│       │   │       │   ├── AndroidManifest.xml
-│       │   │       │   ├── java
-│       │   │       │   │   └── com
-│       │   │       │   │       └── example
-│       │   │       │   │           └── aboutme
-│       │   │       │   │               └── MainActivity.kt
-│       │   │       │   └── res
-│       │   │       │       ├── drawable
-│       │   │       │       │   └── ic_launcher_background.xml
-│       │   │       │       ├── drawable-v24
-│       │   │       │       │   └── ic_launcher_foreground.xml
-│       │   │       │       ├── font
-│       │   │       │       │   ├── CYBERTHREATFORCE_LAB_Part_1.pdf
-│       │   │       │       │   ├── OWASP Application Security Verification Standard 4.0-tr.pdf
-│       │   │       │       │   ├── OWASP Application Security Verification Standard 4.0.2-en.pdf
-│       │   │       │       │   └── roboto.ttf
-│       │   │       │       ├── layout
-│       │   │       │       │   └── activity_main.xml
-│       │   │       │       ├── mipmap-anydpi-v26
-│       │   │       │       │   ├── ic_launcher.xml
-│       │   │       │       │   └── ic_launcher_round.xml
-│       │   │       │       ├── mipmap-hdpi
-│       │   │       │       │   ├── ic_launcher.png
-│       │   │       │       │   └── ic_launcher_round.png
-│       │   │       │       ├── mipmap-mdpi
-│       │   │       │       │   ├── ic_launcher.png
-│       │   │       │       │   └── ic_launcher_round.png
-│       │   │       │       ├── mipmap-xhdpi
-│       │   │       │       │   ├── ic_launcher.png
-│       │   │       │       │   └── ic_launcher_round.png
-│       │   │       │       ├── mipmap-xxhdpi
-│       │   │       │       │   ├── ic_launcher.png
-│       │   │       │       │   └── ic_launcher_round.png
-│       │   │       │       ├── mipmap-xxxhdpi
-│       │   │       │       │   ├── ic_launcher.png
-│       │   │       │       │   └── ic_launcher_round.png
-│       │   │       │       ├── values
-│       │   │       │       │   ├── colors.xml
-│       │   │       │       │   ├── dimens.xml
-│       │   │       │       │   ├── strings.xml
-│       │   │       │       │   ├── styles.xml
-│       │   │       │       │   └── themes.xml
-│       │   │       │       └── values-night
-│       │   │       │           └── themes.xml
-│       │   │       └── test
-│       │   │           └── java
-│       │   │               └── com
-│       │   │                   └── example
-│       │   │                       └── aboutme
-│       │   │                           └── ExampleUnitTest.kt
-│       │   ├── build.gradle
-│       │   ├── gradle
-│       │   │   └── wrapper
-│       │   │       ├── gradle-wrapper.jar
-│       │   │       └── gradle-wrapper.properties
-│       │   ├── gradle.properties
-│       │   ├── gradlew
-│       │   ├── gradlew.bat
-│       │   └── settings.gradle
-│       ├── DiceRoller
-│       │   ├── app
-│       │   │   ├── build.gradle
-│       │   │   ├── proguard-rules.pro
-│       │   │   └── src
-│       │   │       ├── androidTest
-│       │   │       │   └── java
-│       │   │       │       └── com
-│       │   │       │           └── example
-│       │   │       │               └── androidplayground
-│       │   │       │                   └── ExampleInstrumentedTest.kt
-│       │   │       ├── main
-│       │   │       │   ├── AndroidManifest.xml
-│       │   │       │   ├── java
-│       │   │       │   │   └── com
-│       │   │       │   │       └── example
-│       │   │       │   │           └── androidplayground
-│       │   │       │   │               └── MainActivity.kt
-│       │   │       │   └── res
-│       │   │       │       ├── drawable
-│       │   │       │       │   ├── dice_1.xml
-│       │   │       │       │   ├── dice_2.xml
-│       │   │       │       │   ├── dice_3.xml
-│       │   │       │       │   ├── dice_4.xml
-│       │   │       │       │   ├── dice_5.xml
-│       │   │       │       │   ├── dice_6.xml
-│       │   │       │       │   ├── empty_dice.xml
-│       │   │       │       │   └── ic_launcher_background.xml
-│       │   │       │       ├── drawable-v24
-│       │   │       │       │   └── ic_launcher_foreground.xml
-│       │   │       │       ├── layout
-│       │   │       │       │   └── activity_main.xml
-│       │   │       │       ├── mipmap-anydpi-v26
-│       │   │       │       │   ├── ic_launcher.xml
-│       │   │       │       │   └── ic_launcher_round.xml
-│       │   │       │       ├── mipmap-hdpi
-│       │   │       │       │   ├── ic_launcher.png
-│       │   │       │       │   └── ic_launcher_round.png
-│       │   │       │       ├── mipmap-mdpi
-│       │   │       │       │   ├── ic_launcher.png
-│       │   │       │       │   └── ic_launcher_round.png
-│       │   │       │       ├── mipmap-xhdpi
-│       │   │       │       │   ├── ic_launcher.png
-│       │   │       │       │   └── ic_launcher_round.png
-│       │   │       │       ├── mipmap-xxhdpi
-│       │   │       │       │   ├── ic_launcher.png
-│       │   │       │       │   └── ic_launcher_round.png
-│       │   │       │       ├── mipmap-xxxhdpi
-│       │   │       │       │   ├── ic_launcher.png
-│       │   │       │       │   └── ic_launcher_round.png
-│       │   │       │       ├── values
-│       │   │       │       │   ├── colors.xml
-│       │   │       │       │   ├── strings.xml
-│       │   │       │       │   └── themes.xml
-│       │   │       │       └── values-night
-│       │   │       │           └── themes.xml
-│       │   │       └── test
-│       │   │           └── java
-│       │   │               └── com
-│       │   │                   └── example
-│       │   │                       └── androidplayground
-│       │   │                           └── ExampleUnitTest.kt
-│       │   ├── build.gradle
-│       │   ├── gradle
-│       │   │   └── wrapper
-│       │   │       ├── gradle-wrapper.jar
-│       │   │       └── gradle-wrapper.properties
-│       │   ├── gradle.properties
-│       │   ├── gradlew
-│       │   ├── gradlew.bat
-│       │   └── settings.gradle
-│       ├── HappyBirthdayApp
-│       │   ├── app
-│       │   │   ├── build.gradle
-│       │   │   ├── proguard-rules.pro
-│       │   │   └── src
-│       │   │       ├── androidTest
-│       │   │       │   └── java
-│       │   │       │       └── com
-│       │   │       │           └── example
-│       │   │       │               └── happybirthdayapp
-│       │   │       │                   └── ExampleInstrumentedTest.java
-│       │   │       ├── main
-│       │   │       │   ├── AndroidManifest.xml
-│       │   │       │   ├── java
-│       │   │       │   │   └── com
-│       │   │       │   │       └── example
-│       │   │       │   │           └── happybirthdayapp
-│       │   │       │   │               └── MainActivity.java
-│       │   │       │   └── res
-│       │   │       │       ├── drawable
-│       │   │       │       │   └── ic_launcher_background.xml
-│       │   │       │       ├── drawable-v24
-│       │   │       │       │   └── ic_launcher_foreground.xml
-│       │   │       │       ├── layout
-│       │   │       │       │   └── activity_main.xml
-│       │   │       │       ├── mipmap-anydpi-v26
-│       │   │       │       │   ├── ic_launcher.xml
-│       │   │       │       │   └── ic_launcher_round.xml
-│       │   │       │       ├── mipmap-hdpi
-│       │   │       │       │   ├── ic_launcher.png
-│       │   │       │       │   └── ic_launcher_round.png
-│       │   │       │       ├── mipmap-mdpi
-│       │   │       │       │   ├── ic_launcher.png
-│       │   │       │       │   └── ic_launcher_round.png
-│       │   │       │       ├── mipmap-xhdpi
-│       │   │       │       │   ├── ic_launcher.png
-│       │   │       │       │   └── ic_launcher_round.png
-│       │   │       │       ├── mipmap-xxhdpi
-│       │   │       │       │   ├── ic_launcher.png
-│       │   │       │       │   └── ic_launcher_round.png
-│       │   │       │       ├── mipmap-xxxhdpi
-│       │   │       │       │   ├── ic_launcher.png
-│       │   │       │       │   └── ic_launcher_round.png
-│       │   │       │       ├── values
-│       │   │       │       │   ├── colors.xml
-│       │   │       │       │   ├── strings.xml
-│       │   │       │       │   └── themes.xml
-│       │   │       │       └── values-night
-│       │   │       │           └── themes.xml
-│       │   │       └── test
-│       │   │           └── java
-│       │   │               └── com
-│       │   │                   └── example
-│       │   │                       └── happybirthdayapp
-│       │   │                           └── ExampleUnitTest.java
-│       │   ├── build.gradle
-│       │   ├── gradle
-│       │   │   └── wrapper
-│       │   │       ├── gradle-wrapper.jar
-│       │   │       └── gradle-wrapper.properties
-│       │   ├── gradle.properties
-│       │   ├── gradlew
-│       │   ├── gradlew.bat
-│       │   └── settings.gradle
-│       ├── Learning_SMALI
-│       │   ├── app
-│       │   │   ├── build.gradle
-│       │   │   ├── proguard-rules.pro
-│       │   │   └── src
-│       │   │       ├── androidTest
-│       │   │       │   └── java
-│       │   │       │       └── com
-│       │   │       │           └── example
-│       │   │       │               └── learning_smali
-│       │   │       │                   └── ExampleInstrumentedTest.kt
-│       │   │       ├── main
-│       │   │       │   ├── AndroidManifest.xml
-│       │   │       │   ├── java
-│       │   │       │   │   └── com
-│       │   │       │   │       └── example
-│       │   │       │   │           └── learning_smali
-│       │   │       │   │               └── MainActivity.kt
-│       │   │       │   └── res
-│       │   │       │       ├── drawable
-│       │   │       │       │   └── ic_launcher_background.xml
-│       │   │       │       ├── drawable-v24
-│       │   │       │       │   └── ic_launcher_foreground.xml
-│       │   │       │       ├── layout
-│       │   │       │       │   └── activity_main.xml
-│       │   │       │       ├── mipmap-anydpi-v26
-│       │   │       │       │   ├── ic_launcher.xml
-│       │   │       │       │   └── ic_launcher_round.xml
-│       │   │       │       ├── mipmap-hdpi
-│       │   │       │       │   ├── ic_launcher.webp
-│       │   │       │       │   └── ic_launcher_round.webp
-│       │   │       │       ├── mipmap-mdpi
-│       │   │       │       │   ├── ic_launcher.webp
-│       │   │       │       │   └── ic_launcher_round.webp
-│       │   │       │       ├── mipmap-xhdpi
-│       │   │       │       │   ├── ic_launcher.webp
-│       │   │       │       │   └── ic_launcher_round.webp
-│       │   │       │       ├── mipmap-xxhdpi
-│       │   │       │       │   ├── ic_launcher.webp
-│       │   │       │       │   └── ic_launcher_round.webp
-│       │   │       │       ├── mipmap-xxxhdpi
-│       │   │       │       │   ├── ic_launcher.webp
-│       │   │       │       │   └── ic_launcher_round.webp
-│       │   │       │       ├── values
-│       │   │       │       │   ├── colors.xml
-│       │   │       │       │   ├── strings.xml
-│       │   │       │       │   └── themes.xml
-│       │   │       │       └── values-night
-│       │   │       │           └── themes.xml
-│       │   │       └── test
-│       │   │           └── java
-│       │   │               └── com
-│       │   │                   └── example
-│       │   │                       └── learning_smali
-│       │   │                           └── ExampleUnitTest.kt
-│       │   ├── build.gradle
-│       │   ├── gradle
-│       │   │   └── wrapper
-│       │   │       ├── gradle-wrapper.jar
-│       │   │       └── gradle-wrapper.properties
-│       │   ├── gradle.properties
-│       │   ├── gradlew
-│       │   ├── gradlew.bat
-│       │   └── settings.gradle
-│       └── ToDoList
-│           ├── app
-│           │   ├── build.gradle
-│           │   ├── proguard-rules.pro
-│           │   └── src
-│           │       ├── androidTest
-│           │       │   └── java
-│           │       │       └── com
-│           │       │           └── example
-│           │       │               └── todoactivity
-│           │       │                   └── ExampleInstrumentedTest.java
-│           │       ├── main
-│           │       │   ├── AndroidManifest.xml
-│           │       │   ├── java
-│           │       │   │   └── com
-│           │       │   │       └── example
-│           │       │   │           └── todoactivity
-│           │       │   │               ├── Adapter
-│           │       │   │               │   └── ToDoAdapter.java
-│           │       │   │               ├── AddNewTask.java
-│           │       │   │               ├── DialogCloseListener.java
-│           │       │   │               ├── MainActivity.java
-│           │       │   │               ├── Model
-│           │       │   │               │   └── ToDoModel.java
-│           │       │   │               ├── RecyclerItemTouchHelper.java
-│           │       │   │               ├── SplashActivity.java
-│           │       │   │               └── Utils
-│           │       │   │                   └── DatabaseHandler.java
-│           │       │   └── res
-│           │       │       ├── drawable
-│           │       │       │   ├── ic_baseline_add.xml
-│           │       │       │   ├── ic_baseline_delete_24.xml
-│           │       │       │   ├── ic_baseline_edit.xml
-│           │       │       │   └── ic_launcher_background.xml
-│           │       │       ├── drawable-v24
-│           │       │       │   └── ic_launcher_foreground.xml
-│           │       │       ├── layout
-│           │       │       │   ├── activity_main.xml
-│           │       │       │   ├── activity_splash.xml
-│           │       │       │   ├── new_task.xml
-│           │       │       │   └── task_layout.xml
-│           │       │       ├── layout-v21
-│           │       │       │   ├── activity_main.xml
-│           │       │       │   └── task_layout.xml
-│           │       │       ├── mipmap-anydpi-v26
-│           │       │       │   ├── ic_launcher.xml
-│           │       │       │   └── ic_launcher_round.xml
-│           │       │       ├── mipmap-hdpi
-│           │       │       │   ├── ic_launcher.png
-│           │       │       │   └── ic_launcher_round.png
-│           │       │       ├── mipmap-mdpi
-│           │       │       │   ├── ic_launcher.png
-│           │       │       │   └── ic_launcher_round.png
-│           │       │       ├── mipmap-xhdpi
-│           │       │       │   ├── ic_launcher.png
-│           │       │       │   └── ic_launcher_round.png
-│           │       │       ├── mipmap-xxhdpi
-│           │       │       │   ├── ic_launcher.png
-│           │       │       │   └── ic_launcher_round.png
-│           │       │       ├── mipmap-xxxhdpi
-│           │       │       │   ├── ic_launcher.png
-│           │       │       │   └── ic_launcher_round.png
-│           │       │       ├── values
-│           │       │       │   ├── colors.xml
-│           │       │       │   ├── strings.xml
-│           │       │       │   └── themes.xml
-│           │       │       └── values-night
-│           │       │           └── themes.xml
-│           │       └── test
-│           │           └── java
-│           │               └── com
-│           │                   └── example
-│           │                       └── todoactivity
-│           │                           └── ExampleUnitTest.java
-│           ├── build.gradle
-│           ├── gradle
-│           │   └── wrapper
-│           │       ├── gradle-wrapper.jar
-│           │       └── gradle-wrapper.properties
-│           ├── gradle.properties
-│           ├── gradlew
-│           ├── gradlew.bat
-│           └── settings.gradle
+│   ├── Easy
+│   │   ├── Googles_CodeLabs
+│   │   │   ├── AboutMe
+│   │   │   │   ├── app
+│   │   │   │   │   ├── build.gradle
+│   │   │   │   │   ├── proguard-rules.pro
+│   │   │   │   │   └── src
+│   │   │   │   │       ├── androidTest
+│   │   │   │   │       │   └── java
+│   │   │   │   │       │       └── com
+│   │   │   │   │       │           └── example
+│   │   │   │   │       │               └── aboutme
+│   │   │   │   │       │                   └── ExampleInstrumentedTest.kt
+│   │   │   │   │       ├── main
+│   │   │   │   │       │   ├── AndroidManifest.xml
+│   │   │   │   │       │   ├── java
+│   │   │   │   │       │   │   └── com
+│   │   │   │   │       │   │       └── example
+│   │   │   │   │       │   │           └── aboutme
+│   │   │   │   │       │   │               └── MainActivity.kt
+│   │   │   │   │       │   └── res
+│   │   │   │   │       │       ├── drawable
+│   │   │   │   │       │       │   └── ic_launcher_background.xml
+│   │   │   │   │       │       ├── drawable-v24
+│   │   │   │   │       │       │   └── ic_launcher_foreground.xml
+│   │   │   │   │       │       ├── font
+│   │   │   │   │       │       │   ├── CYBERTHREATFORCE_LAB_Part_1.pdf
+│   │   │   │   │       │       │   ├── OWASP Application Security Verification Standard 4.0-tr.pdf
+│   │   │   │   │       │       │   ├── OWASP Application Security Verification Standard 4.0.2-en.pdf
+│   │   │   │   │       │       │   └── roboto.ttf
+│   │   │   │   │       │       ├── layout
+│   │   │   │   │       │       │   └── activity_main.xml
+│   │   │   │   │       │       ├── mipmap-anydpi-v26
+│   │   │   │   │       │       │   ├── ic_launcher.xml
+│   │   │   │   │       │       │   └── ic_launcher_round.xml
+│   │   │   │   │       │       ├── mipmap-hdpi
+│   │   │   │   │       │       │   ├── ic_launcher.png
+│   │   │   │   │       │       │   └── ic_launcher_round.png
+│   │   │   │   │       │       ├── mipmap-mdpi
+│   │   │   │   │       │       │   ├── ic_launcher.png
+│   │   │   │   │       │       │   └── ic_launcher_round.png
+│   │   │   │   │       │       ├── mipmap-xhdpi
+│   │   │   │   │       │       │   ├── ic_launcher.png
+│   │   │   │   │       │       │   └── ic_launcher_round.png
+│   │   │   │   │       │       ├── mipmap-xxhdpi
+│   │   │   │   │       │       │   ├── ic_launcher.png
+│   │   │   │   │       │       │   └── ic_launcher_round.png
+│   │   │   │   │       │       ├── mipmap-xxxhdpi
+│   │   │   │   │       │       │   ├── ic_launcher.png
+│   │   │   │   │       │       │   └── ic_launcher_round.png
+│   │   │   │   │       │       ├── values
+│   │   │   │   │       │       │   ├── colors.xml
+│   │   │   │   │       │       │   ├── dimens.xml
+│   │   │   │   │       │       │   ├── strings.xml
+│   │   │   │   │       │       │   ├── styles.xml
+│   │   │   │   │       │       │   └── themes.xml
+│   │   │   │   │       │       └── values-night
+│   │   │   │   │       │           └── themes.xml
+│   │   │   │   │       └── test
+│   │   │   │   │           └── java
+│   │   │   │   │               └── com
+│   │   │   │   │                   └── example
+│   │   │   │   │                       └── aboutme
+│   │   │   │   │                           └── ExampleUnitTest.kt
+│   │   │   │   ├── build.gradle
+│   │   │   │   ├── gradle
+│   │   │   │   │   └── wrapper
+│   │   │   │   │       ├── gradle-wrapper.jar
+│   │   │   │   │       └── gradle-wrapper.properties
+│   │   │   │   ├── gradle.properties
+│   │   │   │   ├── gradlew
+│   │   │   │   ├── gradlew.bat
+│   │   │   │   └── settings.gradle
+│   │   │   ├── DiceRoller
+│   │   │   │   ├── app
+│   │   │   │   │   ├── build.gradle
+│   │   │   │   │   ├── proguard-rules.pro
+│   │   │   │   │   └── src
+│   │   │   │   │       ├── androidTest
+│   │   │   │   │       │   └── java
+│   │   │   │   │       │       └── com
+│   │   │   │   │       │           └── example
+│   │   │   │   │       │               └── androidplayground
+│   │   │   │   │       │                   └── ExampleInstrumentedTest.kt
+│   │   │   │   │       ├── main
+│   │   │   │   │       │   ├── AndroidManifest.xml
+│   │   │   │   │       │   ├── java
+│   │   │   │   │       │   │   └── com
+│   │   │   │   │       │   │       └── example
+│   │   │   │   │       │   │           └── androidplayground
+│   │   │   │   │       │   │               └── MainActivity.kt
+│   │   │   │   │       │   └── res
+│   │   │   │   │       │       ├── drawable
+│   │   │   │   │       │       │   ├── dice_1.xml
+│   │   │   │   │       │       │   ├── dice_2.xml
+│   │   │   │   │       │       │   ├── dice_3.xml
+│   │   │   │   │       │       │   ├── dice_4.xml
+│   │   │   │   │       │       │   ├── dice_5.xml
+│   │   │   │   │       │       │   ├── dice_6.xml
+│   │   │   │   │       │       │   ├── empty_dice.xml
+│   │   │   │   │       │       │   └── ic_launcher_background.xml
+│   │   │   │   │       │       ├── drawable-v24
+│   │   │   │   │       │       │   └── ic_launcher_foreground.xml
+│   │   │   │   │       │       ├── layout
+│   │   │   │   │       │       │   └── activity_main.xml
+│   │   │   │   │       │       ├── mipmap-anydpi-v26
+│   │   │   │   │       │       │   ├── ic_launcher.xml
+│   │   │   │   │       │       │   └── ic_launcher_round.xml
+│   │   │   │   │       │       ├── mipmap-hdpi
+│   │   │   │   │       │       │   ├── ic_launcher.png
+│   │   │   │   │       │       │   └── ic_launcher_round.png
+│   │   │   │   │       │       ├── mipmap-mdpi
+│   │   │   │   │       │       │   ├── ic_launcher.png
+│   │   │   │   │       │       │   └── ic_launcher_round.png
+│   │   │   │   │       │       ├── mipmap-xhdpi
+│   │   │   │   │       │       │   ├── ic_launcher.png
+│   │   │   │   │       │       │   └── ic_launcher_round.png
+│   │   │   │   │       │       ├── mipmap-xxhdpi
+│   │   │   │   │       │       │   ├── ic_launcher.png
+│   │   │   │   │       │       │   └── ic_launcher_round.png
+│   │   │   │   │       │       ├── mipmap-xxxhdpi
+│   │   │   │   │       │       │   ├── ic_launcher.png
+│   │   │   │   │       │       │   └── ic_launcher_round.png
+│   │   │   │   │       │       ├── values
+│   │   │   │   │       │       │   ├── colors.xml
+│   │   │   │   │       │       │   ├── strings.xml
+│   │   │   │   │       │       │   └── themes.xml
+│   │   │   │   │       │       └── values-night
+│   │   │   │   │       │           └── themes.xml
+│   │   │   │   │       └── test
+│   │   │   │   │           └── java
+│   │   │   │   │               └── com
+│   │   │   │   │                   └── example
+│   │   │   │   │                       └── androidplayground
+│   │   │   │   │                           └── ExampleUnitTest.kt
+│   │   │   │   ├── build.gradle
+│   │   │   │   ├── gradle
+│   │   │   │   │   └── wrapper
+│   │   │   │   │       ├── gradle-wrapper.jar
+│   │   │   │   │       └── gradle-wrapper.properties
+│   │   │   │   ├── gradle.properties
+│   │   │   │   ├── gradlew
+│   │   │   │   ├── gradlew.bat
+│   │   │   │   └── settings.gradle
+│   │   │   ├── HappyBirthdayApp
+│   │   │   │   ├── app
+│   │   │   │   │   ├── build.gradle
+│   │   │   │   │   ├── proguard-rules.pro
+│   │   │   │   │   └── src
+│   │   │   │   │       ├── androidTest
+│   │   │   │   │       │   └── java
+│   │   │   │   │       │       └── com
+│   │   │   │   │       │           └── example
+│   │   │   │   │       │               └── happybirthdayapp
+│   │   │   │   │       │                   └── ExampleInstrumentedTest.java
+│   │   │   │   │       ├── main
+│   │   │   │   │       │   ├── AndroidManifest.xml
+│   │   │   │   │       │   ├── java
+│   │   │   │   │       │   │   └── com
+│   │   │   │   │       │   │       └── example
+│   │   │   │   │       │   │           └── happybirthdayapp
+│   │   │   │   │       │   │               └── MainActivity.java
+│   │   │   │   │       │   └── res
+│   │   │   │   │       │       ├── drawable
+│   │   │   │   │       │       │   └── ic_launcher_background.xml
+│   │   │   │   │       │       ├── drawable-v24
+│   │   │   │   │       │       │   └── ic_launcher_foreground.xml
+│   │   │   │   │       │       ├── layout
+│   │   │   │   │       │       │   └── activity_main.xml
+│   │   │   │   │       │       ├── mipmap-anydpi-v26
+│   │   │   │   │       │       │   ├── ic_launcher.xml
+│   │   │   │   │       │       │   └── ic_launcher_round.xml
+│   │   │   │   │       │       ├── mipmap-hdpi
+│   │   │   │   │       │       │   ├── ic_launcher.png
+│   │   │   │   │       │       │   └── ic_launcher_round.png
+│   │   │   │   │       │       ├── mipmap-mdpi
+│   │   │   │   │       │       │   ├── ic_launcher.png
+│   │   │   │   │       │       │   └── ic_launcher_round.png
+│   │   │   │   │       │       ├── mipmap-xhdpi
+│   │   │   │   │       │       │   ├── ic_launcher.png
+│   │   │   │   │       │       │   └── ic_launcher_round.png
+│   │   │   │   │       │       ├── mipmap-xxhdpi
+│   │   │   │   │       │       │   ├── ic_launcher.png
+│   │   │   │   │       │       │   └── ic_launcher_round.png
+│   │   │   │   │       │       ├── mipmap-xxxhdpi
+│   │   │   │   │       │       │   ├── ic_launcher.png
+│   │   │   │   │       │       │   └── ic_launcher_round.png
+│   │   │   │   │       │       ├── values
+│   │   │   │   │       │       │   ├── colors.xml
+│   │   │   │   │       │       │   ├── strings.xml
+│   │   │   │   │       │       │   └── themes.xml
+│   │   │   │   │       │       └── values-night
+│   │   │   │   │       │           └── themes.xml
+│   │   │   │   │       └── test
+│   │   │   │   │           └── java
+│   │   │   │   │               └── com
+│   │   │   │   │                   └── example
+│   │   │   │   │                       └── happybirthdayapp
+│   │   │   │   │                           └── ExampleUnitTest.java
+│   │   │   │   ├── build.gradle
+│   │   │   │   ├── gradle
+│   │   │   │   │   └── wrapper
+│   │   │   │   │       ├── gradle-wrapper.jar
+│   │   │   │   │       └── gradle-wrapper.properties
+│   │   │   │   ├── gradle.properties
+│   │   │   │   ├── gradlew
+│   │   │   │   ├── gradlew.bat
+│   │   │   │   └── settings.gradle
+│   │   │   ├── Learning_SMALI
+│   │   │   │   ├── app
+│   │   │   │   │   ├── build.gradle
+│   │   │   │   │   ├── proguard-rules.pro
+│   │   │   │   │   └── src
+│   │   │   │   │       ├── androidTest
+│   │   │   │   │       │   └── java
+│   │   │   │   │       │       └── com
+│   │   │   │   │       │           └── example
+│   │   │   │   │       │               └── learning_smali
+│   │   │   │   │       │                   └── ExampleInstrumentedTest.kt
+│   │   │   │   │       ├── main
+│   │   │   │   │       │   ├── AndroidManifest.xml
+│   │   │   │   │       │   ├── java
+│   │   │   │   │       │   │   └── com
+│   │   │   │   │       │   │       └── example
+│   │   │   │   │       │   │           └── learning_smali
+│   │   │   │   │       │   │               └── MainActivity.kt
+│   │   │   │   │       │   └── res
+│   │   │   │   │       │       ├── drawable
+│   │   │   │   │       │       │   └── ic_launcher_background.xml
+│   │   │   │   │       │       ├── drawable-v24
+│   │   │   │   │       │       │   └── ic_launcher_foreground.xml
+│   │   │   │   │       │       ├── layout
+│   │   │   │   │       │       │   └── activity_main.xml
+│   │   │   │   │       │       ├── mipmap-anydpi-v26
+│   │   │   │   │       │       │   ├── ic_launcher.xml
+│   │   │   │   │       │       │   └── ic_launcher_round.xml
+│   │   │   │   │       │       ├── mipmap-hdpi
+│   │   │   │   │       │       │   ├── ic_launcher.webp
+│   │   │   │   │       │       │   └── ic_launcher_round.webp
+│   │   │   │   │       │       ├── mipmap-mdpi
+│   │   │   │   │       │       │   ├── ic_launcher.webp
+│   │   │   │   │       │       │   └── ic_launcher_round.webp
+│   │   │   │   │       │       ├── mipmap-xhdpi
+│   │   │   │   │       │       │   ├── ic_launcher.webp
+│   │   │   │   │       │       │   └── ic_launcher_round.webp
+│   │   │   │   │       │       ├── mipmap-xxhdpi
+│   │   │   │   │       │       │   ├── ic_launcher.webp
+│   │   │   │   │       │       │   └── ic_launcher_round.webp
+│   │   │   │   │       │       ├── mipmap-xxxhdpi
+│   │   │   │   │       │       │   ├── ic_launcher.webp
+│   │   │   │   │       │       │   └── ic_launcher_round.webp
+│   │   │   │   │       │       ├── values
+│   │   │   │   │       │       │   ├── colors.xml
+│   │   │   │   │       │       │   ├── strings.xml
+│   │   │   │   │       │       │   └── themes.xml
+│   │   │   │   │       │       └── values-night
+│   │   │   │   │       │           └── themes.xml
+│   │   │   │   │       └── test
+│   │   │   │   │           └── java
+│   │   │   │   │               └── com
+│   │   │   │   │                   └── example
+│   │   │   │   │                       └── learning_smali
+│   │   │   │   │                           └── ExampleUnitTest.kt
+│   │   │   │   ├── build.gradle
+│   │   │   │   ├── gradle
+│   │   │   │   │   └── wrapper
+│   │   │   │   │       ├── gradle-wrapper.jar
+│   │   │   │   │       └── gradle-wrapper.properties
+│   │   │   │   ├── gradle.properties
+│   │   │   │   ├── gradlew
+│   │   │   │   ├── gradlew.bat
+│   │   │   │   └── settings.gradle
+│   │   │   └── ToDoList
+│   │   │       ├── app
+│   │   │       │   ├── build.gradle
+│   │   │       │   ├── proguard-rules.pro
+│   │   │       │   └── src
+│   │   │       │       ├── androidTest
+│   │   │       │       │   └── java
+│   │   │       │       │       └── com
+│   │   │       │       │           └── example
+│   │   │       │       │               └── todoactivity
+│   │   │       │       │                   └── ExampleInstrumentedTest.java
+│   │   │       │       ├── main
+│   │   │       │       │   ├── AndroidManifest.xml
+│   │   │       │       │   ├── java
+│   │   │       │       │   │   └── com
+│   │   │       │       │   │       └── example
+│   │   │       │       │   │           └── todoactivity
+│   │   │       │       │   │               ├── Adapter
+│   │   │       │       │   │               │   └── ToDoAdapter.java
+│   │   │       │       │   │               ├── AddNewTask.java
+│   │   │       │       │   │               ├── DialogCloseListener.java
+│   │   │       │       │   │               ├── MainActivity.java
+│   │   │       │       │   │               ├── Model
+│   │   │       │       │   │               │   └── ToDoModel.java
+│   │   │       │       │   │               ├── RecyclerItemTouchHelper.java
+│   │   │       │       │   │               ├── SplashActivity.java
+│   │   │       │       │   │               └── Utils
+│   │   │       │       │   │                   └── DatabaseHandler.java
+│   │   │       │       │   └── res
+│   │   │       │       │       ├── drawable
+│   │   │       │       │       │   ├── ic_baseline_add.xml
+│   │   │       │       │       │   ├── ic_baseline_delete_24.xml
+│   │   │       │       │       │   ├── ic_baseline_edit.xml
+│   │   │       │       │       │   └── ic_launcher_background.xml
+│   │   │       │       │       ├── drawable-v24
+│   │   │       │       │       │   └── ic_launcher_foreground.xml
+│   │   │       │       │       ├── layout
+│   │   │       │       │       │   ├── activity_main.xml
+│   │   │       │       │       │   ├── activity_splash.xml
+│   │   │       │       │       │   ├── new_task.xml
+│   │   │       │       │       │   └── task_layout.xml
+│   │   │       │       │       ├── layout-v21
+│   │   │       │       │       │   ├── activity_main.xml
+│   │   │       │       │       │   └── task_layout.xml
+│   │   │       │       │       ├── mipmap-anydpi-v26
+│   │   │       │       │       │   ├── ic_launcher.xml
+│   │   │       │       │       │   └── ic_launcher_round.xml
+│   │   │       │       │       ├── mipmap-hdpi
+│   │   │       │       │       │   ├── ic_launcher.png
+│   │   │       │       │       │   └── ic_launcher_round.png
+│   │   │       │       │       ├── mipmap-mdpi
+│   │   │       │       │       │   ├── ic_launcher.png
+│   │   │       │       │       │   └── ic_launcher_round.png
+│   │   │       │       │       ├── mipmap-xhdpi
+│   │   │       │       │       │   ├── ic_launcher.png
+│   │   │       │       │       │   └── ic_launcher_round.png
+│   │   │       │       │       ├── mipmap-xxhdpi
+│   │   │       │       │       │   ├── ic_launcher.png
+│   │   │       │       │       │   └── ic_launcher_round.png
+│   │   │       │       │       ├── mipmap-xxxhdpi
+│   │   │       │       │       │   ├── ic_launcher.png
+│   │   │       │       │       │   └── ic_launcher_round.png
+│   │   │       │       │       ├── values
+│   │   │       │       │       │   ├── colors.xml
+│   │   │       │       │       │   ├── strings.xml
+│   │   │       │       │       │   └── themes.xml
+│   │   │       │       │       └── values-night
+│   │   │       │       │           └── themes.xml
+│   │   │       │       └── test
+│   │   │       │           └── java
+│   │   │       │               └── com
+│   │   │       │                   └── example
+│   │   │       │                       └── todoactivity
+│   │   │       │                           └── ExampleUnitTest.java
+│   │   │       ├── build.gradle
+│   │   │       ├── gradle
+│   │   │       │   └── wrapper
+│   │   │       │       ├── gradle-wrapper.jar
+│   │   │       │       └── gradle-wrapper.properties
+│   │   │       ├── gradle.properties
+│   │   │       ├── gradlew
+│   │   │       ├── gradlew.bat
+│   │   │       └── settings.gradle
+│   │   └── Simple_Calculator
+│   │       ├── app
+│   │       │   ├── build.gradle
+│   │       │   ├── proguard-rules.pro
+│   │       │   └── src
+│   │       │       ├── androidTest
+│   │       │       │   └── java
+│   │       │       │       └── com
+│   │       │       │           └── example
+│   │       │       │               └── simple_calculator
+│   │       │       │                   └── ExampleInstrumentedTest.kt
+│   │       │       ├── main
+│   │       │       │   ├── AndroidManifest.xml
+│   │       │       │   ├── java
+│   │       │       │   │   └── com
+│   │       │       │   │       └── example
+│   │       │       │   │           └── simple_calculator
+│   │       │       │   │               └── MainActivity.kt
+│   │       │       │   └── res
+│   │       │       │       ├── drawable
+│   │       │       │       │   └── ic_launcher_background.xml
+│   │       │       │       ├── drawable-v24
+│   │       │       │       │   └── ic_launcher_foreground.xml
+│   │       │       │       ├── layout
+│   │       │       │       │   └── activity_main.xml
+│   │       │       │       ├── mipmap-anydpi-v26
+│   │       │       │       │   ├── ic_launcher.xml
+│   │       │       │       │   └── ic_launcher_round.xml
+│   │       │       │       ├── mipmap-hdpi
+│   │       │       │       │   ├── ic_launcher.webp
+│   │       │       │       │   └── ic_launcher_round.webp
+│   │       │       │       ├── mipmap-mdpi
+│   │       │       │       │   ├── ic_launcher.webp
+│   │       │       │       │   └── ic_launcher_round.webp
+│   │       │       │       ├── mipmap-xhdpi
+│   │       │       │       │   ├── ic_launcher.webp
+│   │       │       │       │   └── ic_launcher_round.webp
+│   │       │       │       ├── mipmap-xxhdpi
+│   │       │       │       │   ├── ic_launcher.webp
+│   │       │       │       │   └── ic_launcher_round.webp
+│   │       │       │       ├── mipmap-xxxhdpi
+│   │       │       │       │   ├── ic_launcher.webp
+│   │       │       │       │   └── ic_launcher_round.webp
+│   │       │       │       ├── values
+│   │       │       │       │   ├── colors.xml
+│   │       │       │       │   ├── strings.xml
+│   │       │       │       │   └── themes.xml
+│   │       │       │       └── values-night
+│   │       │       │           └── themes.xml
+│   │       │       └── test
+│   │       │           └── java
+│   │       │               └── com
+│   │       │                   └── example
+│   │       │                       └── simple_calculator
+│   │       │                           └── ExampleUnitTest.kt
+│   │       ├── build.gradle
+│   │       ├── gradle
+│   │       │   └── wrapper
+│   │       │       ├── gradle-wrapper.jar
+│   │       │       └── gradle-wrapper.properties
+│   │       ├── gradle.properties
+│   │       ├── gradlew
+│   │       ├── gradlew.bat
+│   │       └── settings.gradle
+│   ├── Intermediate
+│   │   └── GraphSudokuOpen
+│   └── Personal
+│       └── Cyber-Chef-Mobile
+│           └── README.md
 ├── DevSecOps
 │   └── Infra_Stuff
 │       ├── Ansible_Lab
@@ -588,5 +656,5 @@ However, I do have plans to extend the projects functionality, because most of t
         ├── tsconfig.spec.json
         └── tslint.json
 
-240 directories, 341 files
+276 directories, 373 files
 ```
