@@ -8,6 +8,75 @@ However, I do have plans to extend the projects functionality, because most of t
 ```.
 ├── Android_Apps
 │   ├── Easy
+│   │   ├── First_Compose_App
+│   │   │   ├── app
+│   │   │   │   ├── build.gradle
+│   │   │   │   ├── proguard-rules.pro
+│   │   │   │   └── src
+│   │   │   │       ├── androidTest
+│   │   │   │       │   └── java
+│   │   │   │       │       └── com
+│   │   │   │       │           └── example
+│   │   │   │       │               └── first_compose_app
+│   │   │   │       │                   └── ExampleInstrumentedTest.kt
+│   │   │   │       ├── main
+│   │   │   │       │   ├── AndroidManifest.xml
+│   │   │   │       │   ├── java
+│   │   │   │       │   │   └── com
+│   │   │   │       │   │       └── example
+│   │   │   │       │   │           └── first_compose_app
+│   │   │   │       │   │               ├── MainActivity.kt
+│   │   │   │       │   │               └── ui
+│   │   │   │       │   │                   └── theme
+│   │   │   │       │   │                       ├── Color.kt
+│   │   │   │       │   │                       ├── Shape.kt
+│   │   │   │       │   │                       ├── Theme.kt
+│   │   │   │       │   │                       └── Type.kt
+│   │   │   │       │   └── res
+│   │   │   │       │       ├── drawable
+│   │   │   │       │       │   ├── fishuu.png
+│   │   │   │       │       │   └── ic_launcher_background.xml
+│   │   │   │       │       ├── drawable-v24
+│   │   │   │       │       │   └── ic_launcher_foreground.xml
+│   │   │   │       │       ├── mipmap-anydpi-v26
+│   │   │   │       │       │   ├── ic_launcher.xml
+│   │   │   │       │       │   └── ic_launcher_round.xml
+│   │   │   │       │       ├── mipmap-hdpi
+│   │   │   │       │       │   ├── ic_launcher.webp
+│   │   │   │       │       │   └── ic_launcher_round.webp
+│   │   │   │       │       ├── mipmap-mdpi
+│   │   │   │       │       │   ├── ic_launcher.webp
+│   │   │   │       │       │   └── ic_launcher_round.webp
+│   │   │   │       │       ├── mipmap-xhdpi
+│   │   │   │       │       │   ├── ic_launcher.webp
+│   │   │   │       │       │   └── ic_launcher_round.webp
+│   │   │   │       │       ├── mipmap-xxhdpi
+│   │   │   │       │       │   ├── ic_launcher.webp
+│   │   │   │       │       │   └── ic_launcher_round.webp
+│   │   │   │       │       ├── mipmap-xxxhdpi
+│   │   │   │       │       │   ├── ic_launcher.webp
+│   │   │   │       │       │   └── ic_launcher_round.webp
+│   │   │   │       │       ├── values
+│   │   │   │       │       │   ├── colors.xml
+│   │   │   │       │       │   ├── strings.xml
+│   │   │   │       │       │   └── themes.xml
+│   │   │   │       │       └── values-night
+│   │   │   │       │           └── themes.xml
+│   │   │   │       └── test
+│   │   │   │           └── java
+│   │   │   │               └── com
+│   │   │   │                   └── example
+│   │   │   │                       └── first_compose_app
+│   │   │   │                           └── ExampleUnitTest.kt
+│   │   │   ├── build.gradle
+│   │   │   ├── gradle
+│   │   │   │   └── wrapper
+│   │   │   │       ├── gradle-wrapper.jar
+│   │   │   │       └── gradle-wrapper.properties
+│   │   │   ├── gradle.properties
+│   │   │   ├── gradlew
+│   │   │   ├── gradlew.bat
+│   │   │   └── settings.gradle
 │   │   ├── Googles_CodeLabs
 │   │   │   ├── AboutMe
 │   │   │   │   ├── app
@@ -656,5 +725,5 @@ However, I do have plans to extend the projects functionality, because most of t
         ├── tsconfig.spec.json
         └── tslint.json
 
-276 directories, 373 files
+309 directories, 409 files
 ```
