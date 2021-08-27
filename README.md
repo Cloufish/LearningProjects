@@ -9,6 +9,7 @@ However, I do have plans to extend the projects functionality, because most of t
 ├── Android_Apps
 │   ├── Easy
 │   │   ├── First_Compose_App
+│   │   │   ├── README.md
 │   │   │   ├── app
 │   │   │   │   ├── build.gradle
 │   │   │   │   ├── proguard-rules.pro
@@ -725,5 +726,5 @@ However, I do have plans to extend the projects functionality, because most of t
         ├── tsconfig.spec.json
         └── tslint.json
 
-309 directories, 409 files
+309 directories, 410 files
 ```
