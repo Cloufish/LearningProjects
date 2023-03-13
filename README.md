@@ -501,6 +501,55 @@ However, I do have plans to extend the projects functionality, because most of t
 │   └── Personal
 │       └── Cyber-Chef-Mobile
 │           └── README.md
+├── C
+│   ├── Algorthims_and_Data_Structures
+│   │   ├── 1. Static Arrays WIP
+│   │   │   └── main.c
+│   │   ├── 2. Linked List WIP
+│   │   │   └── main.c
+│   │   └── 3. Dynamic Arrays WIP
+│   │       └── main.c
+│   ├── Book-Examples
+│   │   ├── Hello_World
+│   │   │   ├── a.out
+│   │   │   └── hello.c
+│   │   └── Objects_Functions_Types
+│   │       ├── a.out
+│   │       ├── arrays.c
+│   │       └── types.c
+│   ├── Bootloader
+│   │   ├── 16-bit_Boot
+│   │   │   ├── boot1_x86.asm
+│   │   │   └── boot1_x86.bin
+│   │   └── 32-bit_Boot
+│   │       ├── boot2.asm
+│   │       └── boot2.bin
+│   ├── Effective_C_Exercises
+│   │   ├── Ch2
+│   │   │   ├── a.out
+│   │   │   ├── ex1.c
+│   │   │   ├── ex1.out
+│   │   │   ├── ex2.c
+│   │   │   └── ex2.out
+│   │   └── Ch5
+│   │       ├── ex1.c
+│   │       ├── ex2.c
+│   │       └── ex3.c
+│   ├── Fuzzer
+│   │   ├── fuzz.py
+│   │   ├── program
+│   │   └── program.c
+│   ├── Kernel
+│   │   ├── kasm.o
+│   │   ├── kc.o
+│   │   ├── kernel-701
+│   │   ├── kernel_entrypoint.asm
+│   │   ├── kernel_entrypoint.o
+│   │   ├── kmain.c
+│   │   └── link.ld
+│   └── Shell_in_c
+│       ├── clsh_shell
+│       └── clsh_shell.c
 ├── DevSecOps
 │   └── Infra_Stuff
 │       ├── Ansible_Lab
@@ -527,30 +576,10 @@ However, I do have plans to extend the projects functionality, because most of t
 │       └── Kubernetes_Stuff
 │           └── Intro
 │               └── deployment.yml
+├── Embedded
+│   ├── IoT-For-Beginners
+│   └── bare-metal-programming-guide
 ├── Programming_Languages_Challs
-│   ├── C
-│   │   ├── Bootloader
-│   │   │   ├── 16-bit_Boot
-│   │   │   │   ├── boot1_x86.asm
-│   │   │   │   └── boot1_x86.bin
-│   │   │   └── 32-bit_Boot
-│   │   │       ├── boot2.asm
-│   │   │       └── boot2.bin
-│   │   ├── Fuzzer
-│   │   │   ├── fuzz.py
-│   │   │   ├── program
-│   │   │   └── program.c
-│   │   ├── Kernel
-│   │   │   ├── kasm.o
-│   │   │   ├── kc.o
-│   │   │   ├── kernel-701
-│   │   │   ├── kernel_entrypoint.asm
-│   │   │   ├── kernel_entrypoint.o
-│   │   │   ├── kmain.c
-│   │   │   └── link.ld
-│   │   └── Shell_in_c
-│   │       ├── clsh_shell
-│   │       └── clsh_shell.c
 │   ├── Python
 │   │   └── Ciphers
 │   │       ├── Ceasar_Cipher
@@ -609,6 +638,42 @@ However, I do have plans to extend the projects functionality, because most of t
 │               ├── listing8_parsing_with_split.nim
 │               └── listing9_parsing_with_parseutils.nim
 ├── README.md
+├── Rust
+│   ├── Rust101
+│   │   └── workspace.zip
+│   ├── Rust_Programming_Language_Book
+│   │   ├── Ch.1-Hello-World
+│   │   │   ├── hello_cargo
+│   │   │   │   ├── Cargo.lock
+│   │   │   │   ├── Cargo.toml
+│   │   │   │   └── src
+│   │   │   │       └── main.rs
+│   │   │   ├── main
+│   │   │   └── main.rs
+│   │   ├── Ch.2-Guessing-Game
+│   │   │   └── guessing_game
+│   │   │       ├── Cargo.lock
+│   │   │       ├── Cargo.toml
+│   │   │       └── src
+│   │   │           └── main.rs
+│   │   ├── Ch.3-Programming-Concepts
+│   │   │   └── programming-concepts
+│   │   │       ├── Cargo.toml
+│   │   │       └── src
+│   │   │           └── main.rs
+│   │   ├── Ch.4-Understanding-Ownership
+│   │   │   └── ownership
+│   │   │       ├── Cargo.toml
+│   │   │       └── src
+│   │   │           └── main.rs
+│   │   └── Ch.5-Using-Structs
+│   │       └── structs
+│   │           ├── Cargo.toml
+│   │           └── src
+│   │               ├── example.rs
+│   │               └── main.rs
+│   ├── rust-by-example
+│   └── rustlings
 └── Web_Apps
     ├── Django
     │   └── Django_Meetups_App
@@ -726,5 +791,5 @@ However, I do have plans to extend the projects functionality, because most of t
         ├── tsconfig.spec.json
         └── tslint.json
 
-309 directories, 410 files
+342 directories, 442 files
 ```
