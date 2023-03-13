@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Simple_Calculator</string>
+    <string name="calculator">Calculator</string>
+    <string name="number1_0">Number1(0)</string>
+    <string name="number2_0">number2(0)</string>
+    <string name="result">result</string>
+    <string name="Minus">-</string>
+    <string name="inputNull">Please enter a value</string>
+</resources>
